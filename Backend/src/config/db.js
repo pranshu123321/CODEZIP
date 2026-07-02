@@ -1,9 +1,9 @@
-import React from 'react';
+const mongoose = require('mongoose');
 
-function Navbar() {
-  return (
-    <div>Navbar</div>
-  );
+async function main() {
+    await mongoose.connect(process.env.DB_CONNECT_STRING)
 }
 
-export default Navbar;
+module.exports = main;
+
+
