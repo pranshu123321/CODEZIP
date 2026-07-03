@@ -1,9 +1,21 @@
-import React from 'react';
+const validator =require("validator");
 
-function Navbar() {
-  return (
-    <div>Navbar</div>
-  );
+// req.body 
+
+const validate = (data)=>{
+   
+    const mandatoryField = ['firstName',"emailId",'password'];
+
+    const IsAllowed = mandatoryField.every((k)=> Object.keys(data).includes(k));
+
+    if(!IsAllowed)
+        throw new Error("Some Field Missing");
+
+    if(!validator.isEmail(data.emailId))
+        throw new Error("Invalid Email");
+
+    if(!validator.isStrongPassword(data.password))
+        throw new Error("Week Password");
 }
 
-export default Navbar;
+module.exports = validate;
