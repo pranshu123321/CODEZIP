@@ -1,16 +1,93 @@
-# React + Vite
+# Full-Stack Problem-Solving Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a full-stack web application designed to provide an interactive platform for solving problems, submitting solutions, and learning through video tutorials. It also includes an AI chatbot for assistance and an admin panel for managing content.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### User Features
+- **Problem Solving**: Users can solve problems and submit their solutions.
+- **Video Tutorials**: Access solution videos for better understanding.
+- **AI Chatbot**: Interact with an AI chatbot for assistance.
+- **User Dashboard**: View submission history and track progress.
+- **Theme Selector**: Customize the application theme.
 
-## React Compiler
+### Admin Features
+- **Content Management**: Add, update, or delete problems and videos.
+- **User Management**: Monitor and manage user activities.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### General Features
+- **Authentication**: Secure login and signup functionality.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **State Management**: Efficient state handling using Redux.
+- **API Integration**: Seamless communication between frontend and backend.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React
+- Tailwind CSS
+- Vite
+
+### Backend
+- Node.js
+- Express.js
+- Redis (or other database configurations)
+
+## Installation
+
+### Prerequisites
+- Node.js installed on your system.
+- Redis installed and running (if applicable).
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/garvshas/pro.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd pro
+   ```
+
+#### Backend Setup
+1. Navigate to the backend folder:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the backend server:
+   ```bash
+   npm start
+   ```
+
+#### Frontend Setup
+1. Navigate to the frontend folder:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+- Access the application at `http://localhost:3000` (or the port specified by Vite).
+- Use the admin panel to manage problems, videos, and submissions.
+- Solve problems, watch solution videos, and interact with the AI chatbot.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+For any inquiries, please contact the repository owner at [pranshu and priyanshu].
