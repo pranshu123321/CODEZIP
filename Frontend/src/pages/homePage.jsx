@@ -3,6 +3,7 @@ import { NavLink } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import axiosClient from '../utils/axiosClient';
 import { logoutUser } from '../authSlice';
+import ThemeSelector from '../components/themeSelector';
 
 import Dashboard from '../components/Dashboard';
 

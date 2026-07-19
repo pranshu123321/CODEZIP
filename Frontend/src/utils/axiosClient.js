@@ -1,9 +1,8 @@
-import React from 'react';
+import axios from "axios";
 
-function Navbar() {
-  return (
-    <div>Navbar</div>
-  );
-}
+const axiosClient = axios.create({
+    baseURL: "http://localhost:3000",
+    withCredentials: true,
+});
 
-export default Navbar;
+export default axiosClient;
